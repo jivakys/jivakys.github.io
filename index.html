@@ -44,7 +44,7 @@
 
 <body>
   <!-- Navbar Start-->
-    <nav class="navbar">
+    <nav class="navbar" id="nav-menu">
       <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
       </div> 
@@ -52,13 +52,17 @@
         <div class="logo">
           <a href="#"><span> Portfolio</span></a>
         </div>
-        <ul class="menu">
+        <ul class="nav-link menu">
           <li><a href="#home" class="menu-btn">Home</a></li>
           <li><a href="#about" class="menu-btn">About</a></li>
           <li><a href="#skills" class="menu-btn">Skills</a></li>
           <li><a href="#projects" class="menu-btn">Projects</a></li>
           <li><a href="#contact" class="menu-btn">Contact</a></li>
-          <li><a href="https://drive.google.com/file/d?id=1eWh557jlpOx7cgxpQNA4pqp_BWr_cQCi&export=download" class="menu-btn" id="resume" download="Jivak-Sute-Resume">Resume<i class="material-icons" id="download">download</i></a></li>
+          <li><a href="https://drive.google.com/file/d?id=1eWh557jlpOx7cgxpQNA4pqp_BWr_cQCi&export=download" class="menu-btn" id="resume-button-1" download="Jivak-Sute-Resume">
+            Resume
+            <i class="material-icons" id="download">download</i>
+          </a>
+        </li>
         </ul>
         <div class="menu-btn">
           <i class="material-icons">menu</i>
@@ -75,11 +79,11 @@
     <div class="max-width">
       <div class="home-content">
         <div class="text-1" data-aos="fade-up">Hello, My Name Is</div>
-        <div class="text-2">Jivak Sute</div>
-        <div class="text-3">I'm a <span class="typing"></span></div>
-        <div><a href="https://drive.google.com/file/d?id=1eWh557jlpOx7cgxpQNA4pqp_BWr_cQCi&export=download" download="Jivak-Sute-Resume">Resume<i class="material-icons" id="download1">download</i></a></div>
+        <div class="text-2" id="user-detail-name">Jivak Sute</div>
+        <div class="text-3">I'm a <span class="typing" id="user-detail-intro"></span></div>
+        <div><a href="https://drive.google.com/file/d?id=1eWh557jlpOx7cgxpQNA4pqp_BWr_cQCi&export=download" id="resume-button-2" download="Jivak-Sute-Resume">Resume<i class="material-icons" id="download1">download</i></a></div>
       </div>
-    <div class="passport">
+    <div class="passport home-img">
           <img src="./images/Jivak_Passport_copy.jpg" alt="" />
     </div>
     </div>
@@ -87,7 +91,7 @@
   </section>
 
   <!-- about section -->
-  <section class="about" id="about">
+  <section class="about section" id="about">
     <div class="max-width">
       <h2 class="title" data-aos="fade-down" >About Me</h2>
       <div class="about-content">
@@ -116,7 +120,7 @@
       <h2 class="title" data-aos="fade-up">My Skills</h2>
       <div class="skills-content">
         <div class="column right skill-box">
-          <div class="text">
+          <div class="text skills-card">
           Frontend
         </div>
           <div class="icons">
@@ -133,7 +137,7 @@
               <p style="font-size: 18px;">JavaScript</p>
             </div>
           </div>
-          <div class="text">
+          <div class="text skills-card">
           Backend
         </div>
           <div class="icons">
@@ -154,7 +158,7 @@
               <p style="font-size: 18px;">MySQL</p>
             </div>  
           </div>
-          <div class="text">
+          <div class="text skills-card">
             Tools & Others
           </div>
           <div class="icons">
@@ -183,7 +187,7 @@
       <h2 class="title" data-aos="fade-down">My Projects</h2>
       <div class="serv-content">
         <!-- project-1  -->
-        <div class="card" data-aos="flip-left">
+        <div class="card project-card" data-aos="flip-left">
           <div class="box">
             <i class="fas fa-laptop-code"></i>
             <div class="text">Rentomojo App</div>
@@ -219,7 +223,7 @@
           </div>
         </div>
         <!-- project-2  -->
-        <div class="card" data-aos="flip-left">
+        <div class="card project-card" data-aos="flip-left">
           <div class="box">
             <i class="fas fa-laptop-code"></i>
             <div class="text">Purpple.com</div>
@@ -255,7 +259,7 @@
           </div>
         </div>
         <!-- project-3  -->
-        <div class="card" data-aos="flip-left">
+        <div class="card project-card" data-aos="flip-left">
           <div class="box">
             <i class="fas fa-laptop-code"></i>
             <div class="text">Daily Object</div>
@@ -291,7 +295,7 @@
           </div>
         </div>
         <!-- project-4  -->
-        <div class="card" data-aos="flip-left">
+        <div class="card project-card" data-aos="flip-left">
           <div class="box">
             <i class="fas fa-laptop-code"></i>
             <div class="text">Lenskart.com</div>
@@ -348,20 +352,20 @@
         <div class="column right" data-aos="flip-right">
           <div id="contact-info">
             <div class="contactList">
-              <div class="email_contact contactme">
+              <div class="contactme" id="contact-email">
                 <img src="images/email-logo.jpg" alt="">
                 <p>jivakysute@gmail.com</p>
               </div>
-              <div class="mobile_contact contactme">
+              <div class="contactme" id="contact-phone">
                 <img src="images/phone-logo.jpg" alt="">
                 <p>+91-8600741308</p>
               </div>
-              <div class="address_contact contactme">
+              <div class="contactme">
                 <img src="images/address-logo.jpg" alt="">
                 <p>Wardha, Maharashtra</p>
               </div>
-              <div id="linkgit">
-                <a href="https://github.com/jivakys"><img src="images/github_logo.png" alt=""></a>
+              <div id="contact-github">
+                <a href="https://github.com/jivakys" ><img src="images/github_logo.png" alt=""></a>
                 <a href="https://www.linkedin.com/in/jivak-sute-148635245/"><img src="images/new-linkedin-logo-white-black-png.png" alt=""></a>
               </div>
             </div>

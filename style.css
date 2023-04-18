@@ -566,19 +566,19 @@ section .title::after {
   font-size: 20px;
   /* color: rgb(102, 0, 153); */
 }
-#linkgit {
+#contact-github {
   width: 25%;
   display: flex;
   transition: all 0.3s ease;
 }
-#linkgit a {
+#contact-github a {
   width: 100%;
   margin-right: 15%;
 }
-#linkgit a:hover {
+#contact-github a:hover {
   transform: scale(1.1);
 }
-#linkgit img {
+#contact-github img {
   width: 100%;
 }
 
