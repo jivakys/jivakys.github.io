@@ -567,19 +567,19 @@ section .title::after {
   font-size: 20px;
   /* color: rgb(102, 0, 153); */
 }
-#contact-github {
+.contact-div {
   width: 25%;
   display: flex;
   transition: all 0.3s ease;
 }
-#contact-github a {
+.contact-div a {
   width: 100%;
   margin-right: 15%;
 }
-#contact-github a:hover {
+.contact-div a:hover {
   transform: scale(1.1);
 }
-#contact-github img {
+.contact-div img {
   width: 100%;
 }
 
