@@ -131,7 +131,8 @@ body {
 #download {
   position: absolute;
 }
-.home {
+
+#home {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -143,37 +144,37 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-.home .max-width {
+#home .max-width {
   margin: auto 0px auto 90px;
   display: flex;
 }
 
-.home .max-width .home-content {
+#home .max-width .home-content {
   padding-top: 220px;
   padding-left: 10px;
 }
 
-.home .home-content .text-1 {
+#home .home-content .text-1 {
   font-size: 30px;
 }
 
-.home .home-content .text-2 {
+#home .home-content .text-2 {
   font-size: 55px;
   font-weight: 600;
   margin-left: -3px;
 }
 
-.home .home-content .text-3 {
+#home .home-content .text-3 {
   font-size: 35px;
   margin: 5px 0;
 }
 
-.home .home-content .text-3 span {
+#home .home-content .text-3 span {
   color: rgb(102, 0, 153);
   font-size: 35px;
 }
 
-.home .home-content a {
+#home .home-content a {
   display: inline-flex;
   justify-content: space-evenly;
   background: none;
@@ -186,22 +187,22 @@ body {
   border: 2px solid rgb(102, 0, 153);
   transition: all 0.3s ease;
 }
-.home .home-content a:hover {
+#home .home-content a:hover {
   color: black;
   background: #fff;
 }
-.home .home-content #download1 {
+#home .home-content #download1 {
   display: inline-flex;
   margin-top: 3px;
 }
 
-.home .passport {
+#home .passport {
   margin-left: 150px;
   padding-top: 200px;
   width: 15%;
 }
 
-.home .passport img {
+#home .passport img {
   width: 100%;
   border-radius: 10%;
   border: 1px solid #fff;

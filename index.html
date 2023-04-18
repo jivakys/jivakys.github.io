@@ -53,12 +53,12 @@
           <a href="#"><span> Portfolio</span></a>
         </div>
         <ul class="nav-link menu">
-          <li><a href="#home" class="menu-btn">Home</a></li>
-          <li><a href="#about" class="menu-btn">About</a></li>
-          <li><a href="#skills" class="menu-btn">Skills</a></li>
-          <li><a href="#projects" class="menu-btn">Projects</a></li>
-          <li><a href="#contact" class="menu-btn">Contact</a></li>
-          <li><a href="https://drive.google.com/file/d?id=1eWh557jlpOx7cgxpQNA4pqp_BWr_cQCi&export=download" class="menu-btn" id="resume-button-1" download="Jivak-Sute-Resume">
+          <li><a href="#home" class="menu-btn home">Home</a></li>
+          <li><a href="#about" class="menu-btn about">About</a></li>
+          <li><a href="#skills" class="menu-btn skills">Skills</a></li>
+          <li><a href="#projects" class="menu-btn projects">Projects</a></li>
+          <li><a href="#contact" class="menu-btn contact">Contact</a></li>
+          <li><a href="https://drive.google.com/uc?export=download&id=1eWh557jlpOx7cgxpQNA4pqp_BWr_cQCi" class="menu-btn" id="resume-button-1" download="Jivak-Sute-Resume">
             Resume
             <i class="material-icons" id="download">download</i>
           </a>
@@ -81,10 +81,10 @@
         <div class="text-1" data-aos="fade-up">Hello, My Name Is</div>
         <div class="text-2" id="user-detail-name">Jivak Sute</div>
         <div class="text-3">I'm a <span class="typing" id="user-detail-intro"></span></div>
-        <div><a href="https://drive.google.com/file/d?id=1eWh557jlpOx7cgxpQNA4pqp_BWr_cQCi&export=download" id="resume-button-2" download="Jivak-Sute-Resume">Resume<i class="material-icons" id="download1">download</i></a></div>
+        <div><a href="https://drive.google.com/uc?export=download&id=1eWh557jlpOx7cgxpQNA4pqp_BWr_cQCi" id="resume-button-2" download="Jivak-Sute-Resume">Resume<i class="material-icons" id="download1">download</i></a></div>
       </div>
-    <div class="passport home-img">
-          <img src="./images/Jivak_Passport_copy.jpg" alt="" />
+    <div class="passport">
+          <img class="home-img" src="./images/Jivak_Passport_copy.jpg" alt="passport" />
     </div>
     </div>
     
@@ -102,7 +102,7 @@
           <div class="text">
             I'm Jivak Sute and Im a <span class="typing-2"></span>
           </div>
-          <p class="paragraph">
+          <p class="paragraph" id="user-detail-intro">
             An enthusiastic Full-stack Developer, skilled in Node. Experienced in Developing websites using JavaScript, Node.js, Express.js, MongoDB. An optimistic person, always ready to take critical decisions and ready to work under pressure. Always ready to try some new things for optimization.
           </p>
           <div id="about_contact">
@@ -125,15 +125,15 @@
         </div>
           <div class="icons">
             <div id="html-icon">
-              <img src="images\skill-icons\icons8-html-5.svg" alt="html",  data-aos="flip-left">
+              <img class="skills-card-img" src="images\skill-icons\icons8-html-5.svg" alt="html",  data-aos="flip-left">
               <p style="font-size: 18px;">HTML</p>
             </div>
             <div id="css-icon">
-              <img src="images\skill-icons\icons8-css3.svg" alt="css"  data-aos="flip-left">
+              <img class="skills-card-img" src="images\skill-icons\icons8-css3.svg" alt="css"  data-aos="flip-left">
               <p style="font-size: 18px;">CSS</p>
             </div>
             <div id="js-icon">
-              <img src="images\skill-icons\icons8-javascript.svg" alt="js"  data-aos="flip-left">
+              <img class="skills-card-img" src="images\skill-icons\icons8-javascript.svg" alt="js"  data-aos="flip-left">
               <p style="font-size: 18px;">JavaScript</p>
             </div>
           </div>
@@ -142,19 +142,19 @@
         </div>
           <div class="icons">
             <div id="nodejs-icon">
-              <img src="images\skill-icons\icons8-nodejs.svg" alt="nodedjs"  data-aos="flip-left">
+              <img class="skills-card-img" src="images\skill-icons\icons8-nodejs.svg" alt="nodedjs"  data-aos="flip-left">
               <p style="font-size: 18px;">Node.js</p>
             </div>
             <div id="express-icon" style="width: 10%;">
-              <img src="images/skill-icons/express-svgrepo-com.svg" alt="express"  data-aos="flip-left" style="width: 55%;">
+              <img class="skills-card-img" src="images/skill-icons/express-svgrepo-com.svg" alt="express"  data-aos="flip-left" style="width: 55%;">
               <p style="font-size: 18px;">Express</p>
             </div>
             <div id="mongo-icon" style="width: 10%;">
-              <img src="images/skill-icons/mongodb-svgrepo-com.svg" alt="mongodb"  data-aos="flip-left" style="width: 45%;">
+              <img class="skills-card-img" src="images/skill-icons/mongodb-svgrepo-com.svg" alt="mongodb"  data-aos="flip-left" style="width: 45%;">
               <p style="font-size: 18px;">MongoDB</p>
             </div>
             <div id="mongo-icon" style="width: 10%;">
-              <img src="images/skill-icons/mysql-logo-svgrepo-com.svg" alt="MySQL" data-aos="flip-left" style="width: 50%;">
+              <img class="skills-card-img" src="images/skill-icons/mysql-logo-svgrepo-com.svg" alt="MySQL" data-aos="flip-left" style="width: 50%;">
               <p style="font-size: 18px;">MySQL</p>
             </div>  
           </div>
@@ -163,19 +163,19 @@
           </div>
           <div class="icons">
             <div id="vscode-icon">
-              <img src="images\skill-icons\icons8-visual-studio-code-2019.svg" alt="vscode" data-aos="flip-left">
+              <img class="skills-card-img" src="images\skill-icons\icons8-visual-studio-code-2019.svg" alt="vscode" data-aos="flip-left">
               <p style="font-size: 18px;">VS Code</p>
             </div> 
              <div id="express-icon" style="width: 10%;">
-              <img src="images/skill-icons/github.svg" alt="github"  data-aos="flip-left" style="width: 50%;">
+              <img class="skills-card-img" src="images/skill-icons/github.svg" alt="github"  data-aos="flip-left" style="width: 50%;">
               <p style="font-size: 18px;">Github</p>
             </div>  
             <div id="postman-icon" style="width: 10%;">
-              <img src="images/skill-icons/postman-icon-svgrepo-com.svg" alt="postman" data-aos="flip-left" style="width: 45%;">
+              <img class="skills-card-img" src="images/skill-icons/postman-icon-svgrepo-com.svg" alt="postman" data-aos="flip-left" style="width: 45%;">
               <p style="font-size: 18px;">Postman</p>
             </div>  
             <div id="netlify-icon" style="width: 10%;">
-              <img src="images\skill-icons/netlify-svgrepo-com.svg" alt="netlify" data-aos="flip-left" style="width: 45%;">
+              <img class="skills-card-img" src="images\skill-icons/netlify-svgrepo-com.svg" alt="netlify" data-aos="flip-left" style="width: 45%;">
               <p style="font-size: 18px;">Netlify</p>
             </div>  
       </div>
@@ -190,7 +190,7 @@
         <div class="card project-card" data-aos="flip-left">
           <div class="box">
             <i class="fas fa-laptop-code"></i>
-            <div class="text">Rentomojo App</div>
+            <div class="text project-title">Rentomojo App</div>
             <div class="projectDetails">
               <div class="projectImg">
                 <img src="images/Rentomojo.png" alt="p1">
@@ -226,7 +226,7 @@
         <div class="card project-card" data-aos="flip-left">
           <div class="box">
             <i class="fas fa-laptop-code"></i>
-            <div class="text">Purpple.com</div>
+            <div class="text project-title">Purpple.com</div>
             <div class="projectDetails">
               <div class="projectImg">
                 <img src="images/purpple_App.png" alt="p1">
@@ -262,7 +262,7 @@
         <div class="card project-card" data-aos="flip-left">
           <div class="box">
             <i class="fas fa-laptop-code"></i>
-            <div class="text">Daily Object</div>
+            <div class="text project-title">Daily Object</div>
             <div class="projectDetails">
               <div class="projectImg">
                 <img src="images/Daily_Mart.png" alt="p1">
@@ -298,7 +298,7 @@
         <div class="card project-card" data-aos="flip-left">
           <div class="box">
             <i class="fas fa-laptop-code"></i>
-            <div class="text">Lenskart.com</div>
+            <div class="text project-title">Lenskart.com</div>
             <div class="projectDetails">
               <div class="projectImg">
                 <img src="images/lenskart.png" alt="p1">
@@ -364,9 +364,9 @@
                 <img src="images/address-logo.jpg" alt="">
                 <p>Wardha, Maharashtra</p>
               </div>
-              <div id="contact-github">
-                <a href="https://github.com/jivakys" ><img src="images/github_logo.png" alt=""></a>
-                <a href="https://www.linkedin.com/in/jivak-sute-148635245/"><img src="images/new-linkedin-logo-white-black-png.png" alt=""></a>
+              <div>
+                <a href="https://github.com/jivakys" id="contact-github"><img src="images/github_logo.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/jivak-sute-148635245/" id="contact-linkedin"><img src="images/new-linkedin-logo-white-black-png.png" alt=""></a>
               </div>
             </div>
           </div>
