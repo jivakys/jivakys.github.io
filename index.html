@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jivak Portfolio</title>
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- FAVICON -->
+  <link class="favicon" rel="icon" type="image/img" sizes="32x32" href="images/favicon-32x32.png">
+
+  <!-- Google material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+   <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+   <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/{{YOUR KIT KEY}}.js" crossorigin="anonymous"></script>
+   <!-- TYPE JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   <!-- jQUERY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+   <!-- SWEET ALERT -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+   <!-- EMAIL JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("{{YOUR USER KEY}}");
+    })();
+  </script>
+
+</head>
+
+<body>
+  <!-- Navbar Start-->
+    <nav class="navbar">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div> 
+      <div class="max-width">
+        <div class="logo">
+          <a href="#"><span> Portfolio</span></a>
+        </div>
+        <ul class="menu">
+          <li><a href="#home" class="menu-btn">Home</a></li>
+          <li><a href="#about" class="menu-btn">About</a></li>
+          <li><a href="#skills" class="menu-btn">Skills</a></li>
+          <li><a href="#projects" class="menu-btn">Projects</a></li>
+          <li><a href="#contact" class="menu-btn">Contact</a></li>
+          <li><a href="https://drive.google.com/file/d?id=1eWh557jlpOx7cgxpQNA4pqp_BWr_cQCi&export=download" class="menu-btn" id="resume" download="Jivak-Sute-Resume">Resume<i class="material-icons" id="download">download</i></a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="material-icons">menu</i>
+        </div>
+      </div>
+    </nav>
+  <!-- Scroll to top button -->
+    <button id="btnScrollToTop">
+      <i class="material-icons">arrow_upward</i>
+    </button>
+    
+  <!-- home section start-->
+  <section class="home" id="home">
+    <div class="max-width">
+      <div class="home-content">
+        <div class="text-1" data-aos="fade-up">Hello, My Name Is</div>
+        <div class="text-2">Jivak Sute</div>
+        <div class="text-3">I'm a <span class="typing"></span></div>
+        <div><a href="https://drive.google.com/file/d?id=1eWh557jlpOx7cgxpQNA4pqp_BWr_cQCi&export=download" download="Jivak-Sute-Resume">Resume<i class="material-icons" id="download1">download</i></a></div>
+      </div>
+    <div class="passport">
+          <img src="./images/Jivak_Passport_copy.jpg" alt="" />
+    </div>
+    </div>
+    
+  </section>
+
+  <!-- about section -->
+  <section class="about" id="about">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down" >About Me</h2>
+      <div class="about-content">
+        <div class="column left" data-aos="fade-right" >
+          <img src="./images/full-stack-developer.jpg" alt="" />
+        </div>
+        <div class="column right" data-aos="fade-up">
+          <div class="text">
+            I'm Jivak Sute and Im a <span class="typing-2"></span>
+          </div>
+          <p class="paragraph">
+            An enthusiastic Full-stack Developer, skilled in Node. Experienced in Developing websites using JavaScript, Node.js, Express.js, MongoDB. An optimistic person, always ready to take critical decisions and ready to work under pressure. Always ready to try some new things for optimization.
+          </p>
+          <div id="about_contact">
+            <a href="https://github.com/jivakys"><img src="./images/github_logo.png" class="github_link" alt="github"></a>
+            <a href="https://www.linkedin.com/in/jivak-sute-148635245/"><img src="./images/new-linkedin-logo-white-black-png.png" class="linkdin_link" alt="linkdin"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- skills section projects -->
+  <section class="skills" id="skills">
+    <div class="max-width" data-aos="fade-down">
+      <h2 class="title" data-aos="fade-up">My Skills</h2>
+      <div class="skills-content">
+        <div class="column right skill-box">
+          <div class="text">
+          Frontend
+        </div>
+          <div class="icons">
+            <div id="html-icon">
+              <img src="images\skill-icons\icons8-html-5.svg" alt="html",  data-aos="flip-left">
+              <p style="font-size: 18px;">HTML</p>
+            </div>
+            <div id="css-icon">
+              <img src="images\skill-icons\icons8-css3.svg" alt="css"  data-aos="flip-left">
+              <p style="font-size: 18px;">CSS</p>
+            </div>
+            <div id="js-icon">
+              <img src="images\skill-icons\icons8-javascript.svg" alt="js"  data-aos="flip-left">
+              <p style="font-size: 18px;">JavaScript</p>
+            </div>
+          </div>
+          <div class="text">
+          Backend
+        </div>
+          <div class="icons">
+            <div id="nodejs-icon">
+              <img src="images\skill-icons\icons8-nodejs.svg" alt="nodedjs"  data-aos="flip-left">
+              <p style="font-size: 18px;">Node.js</p>
+            </div>
+            <div id="express-icon" style="width: 10%;">
+              <img src="images/skill-icons/express-svgrepo-com.svg" alt="express"  data-aos="flip-left" style="width: 55%;">
+              <p style="font-size: 18px;">Express</p>
+            </div>
+            <div id="mongo-icon" style="width: 10%;">
+              <img src="images/skill-icons/mongodb-svgrepo-com.svg" alt="mongodb"  data-aos="flip-left" style="width: 45%;">
+              <p style="font-size: 18px;">MongoDB</p>
+            </div>
+            <div id="mongo-icon" style="width: 10%;">
+              <img src="images/skill-icons/mysql-logo-svgrepo-com.svg" alt="MySQL" data-aos="flip-left" style="width: 50%;">
+              <p style="font-size: 18px;">MySQL</p>
+            </div>  
+          </div>
+          <div class="text">
+            Tools & Others
+          </div>
+          <div class="icons">
+            <div id="vscode-icon">
+              <img src="images\skill-icons\icons8-visual-studio-code-2019.svg" alt="vscode" data-aos="flip-left">
+              <p style="font-size: 18px;">VS Code</p>
+            </div> 
+             <div id="express-icon" style="width: 10%;">
+              <img src="images/skill-icons/github.svg" alt="github"  data-aos="flip-left" style="width: 50%;">
+              <p style="font-size: 18px;">Github</p>
+            </div>  
+            <div id="postman-icon" style="width: 10%;">
+              <img src="images/skill-icons/postman-icon-svgrepo-com.svg" alt="postman" data-aos="flip-left" style="width: 45%;">
+              <p style="font-size: 18px;">Postman</p>
+            </div>  
+            <div id="netlify-icon" style="width: 10%;">
+              <img src="images\skill-icons/netlify-svgrepo-com.svg" alt="netlify" data-aos="flip-left" style="width: 45%;">
+              <p style="font-size: 18px;">Netlify</p>
+            </div>  
+      </div>
+  </section>
+
+  <!-- projects Section -->
+  <section class="projects" id="projects">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down">My Projects</h2>
+      <div class="serv-content">
+        <!-- project-1  -->
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fas fa-laptop-code"></i>
+            <div class="text">Rentomojo App</div>
+            <div class="projectDetails">
+              <div class="projectImg">
+                <img src="images/Rentomojo.png" alt="p1">
+              </div>
+              <div class="projectInfo">
+                <b class="infoOfProject">
+                  A Daily Appliances renting app allows users to purchase daily need furniture and other Appliances on rent at very fewer prices
+                </b>
+                <div class="techStack">
+                  <img src="images/skill-icons/icons8-html-5.svg" alt="">
+                  <img src="images/skill-icons/icons8-css3.svg" alt="">
+                  <img src="images/skill-icons/icons8-javascript.svg" alt="">
+                </div>
+                <div class="links">
+                  <div class="projectLinks">
+                  <a href="https://github.com/jivakys/punchy-book-3630">
+                    <b>Github</b> 
+                  </a>
+                    <img src="images/skill-icons/github.svg"  class="projectBtn" alt="">
+                </div>
+                  <div class="projectLinks">
+                    <a href="https://elaborate-treacle-629473.netlify.app">
+                    <b>Live</b> 
+                  </a>
+                    <img src="images/skill-icons/deploy-svgrepo-com.svg"  class="projectBtn" alt="">
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- project-2  -->
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fas fa-laptop-code"></i>
+            <div class="text">Purpple.com</div>
+            <div class="projectDetails">
+              <div class="projectImg">
+                <img src="images/purpple_App.png" alt="p1">
+              </div>
+              <div class="projectInfo">
+                <b class="infoOfProject">
+                  Purpple.com is a Ecommerce product based website in India that allows customers to perchase cosmatic product.
+                </b>
+                <div class="techStack">
+                  <img src="images/skill-icons/icons8-html-5.svg" alt="">
+                  <img src="images/skill-icons/icons8-css3.svg" alt="">
+                  <img src="images/skill-icons/icons8-javascript.svg" alt="">
+                </div>
+                <div class="links">
+                  <div class="projectLinks">
+                  <a href="https://github.com/Upendrapal0607/satisfying-scale-7625">
+                    <b>Github</b> 
+                  </a>
+                    <img src="images/skill-icons/github.svg"  class="projectBtn" alt="">
+                </div>
+                  <div class="projectLinks">
+                    <a href="https://timely-paprenjak-287908.netlify.app">
+                    <b>Live</b> 
+                  </a>
+                    <img src="images/skill-icons/deploy-svgrepo-com.svg"  class="projectBtn" alt="">
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- project-3  -->
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fas fa-laptop-code"></i>
+            <div class="text">Daily Object</div>
+            <div class="projectDetails">
+              <div class="projectImg">
+                <img src="images/Daily_Mart.png" alt="p1">
+              </div>
+              <div class="projectInfo">
+                <b class="infoOfProject">
+                  A web application for a multi-national retail clothing chain. It specializes in fast fashion and sells clothing, accessories, shoes, beauty products, and perfumes.
+                </b>
+                <div class="techStack">
+                  <img src="images/skill-icons/icons8-html-5.svg" alt="">
+                  <img src="images/skill-icons/icons8-css3.svg" alt="">
+                  <img src="images/skill-icons/icons8-javascript.svg" alt="">
+                </div>
+                <div class="links">
+                  <div class="projectLinks">
+                  <a href="https://github.com/Tarkeshwar18/royal-stew-1115">
+                    <b>Github</b> 
+                  </a>
+                    <img src="images/skill-icons/github.svg"  class="projectBtn" alt="">
+                </div>
+                  <div class="projectLinks">
+                    <a href="https://regal-yeot-b37826.netlify.app/">
+                    <b>Live</b> 
+                  </a>
+                    <img src="images/skill-icons/deploy-svgrepo-com.svg"  class="projectBtn" alt="">
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- project-4  -->
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fas fa-laptop-code"></i>
+            <div class="text">Lenskart.com</div>
+            <div class="projectDetails">
+              <div class="projectImg">
+                <img src="images/lenskart.png" alt="p1">
+              </div>
+              <div class="projectInfo">
+                <b class="infoOfProject">
+                 Lenskart Is the Leading E-Commerce Portal For Eyewear In India to provide designer glasses,sunglasses and contact lenses at lower cost.
+                </b>
+                <div class="techStack">
+                  <img src="images/skill-icons/icons8-html-5.svg" alt="">
+                  <img src="images/skill-icons/icons8-css3.svg" alt="">
+                  <img src="images/skill-icons/icons8-javascript.svg" alt="">
+                  <img src="images/skill-icons/express-svgrepo-com.svg" alt="">
+                  <img src="images/skill-icons/icons8-nodejs.svg" alt="">
+                  <img src="images/skill-icons/mongodb-svgrepo-com.svg" alt="">
+                </div>
+                <div class="links">
+                  <div class="projectLinks">
+                  <a href="https://github.com/jivakys/devilish-tax-7135">
+                    <b>Github</b> 
+                  </a>
+                    <img src="images/skill-icons/github.svg"  class="projectBtn" alt="">
+                </div>
+                  <div class="projectLinks">
+                    <a href="https://celadon-dusk-6cc7f0.netlify.app">
+                    <b>Live</b> 
+                  </a>
+                    <img src="images/skill-icons/deploy-svgrepo-com.svg"  class="projectBtn" alt="">
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down">Contact</h2>
+      <div class="contact-content">
+        <div class="column left" data-aos="flip-left">
+          <div class="contact-image">
+            <img src="images/contact-free-photo.jpg" alt="contactImg">
+          </div>
+        </div>
+        <!--right  -->
+        <div class="column right" data-aos="flip-right">
+          <div id="contact-info">
+            <div class="contactList">
+              <div class="email_contact contactme">
+                <img src="images/email-logo.jpg" alt="">
+                <p>jivakysute@gmail.com</p>
+              </div>
+              <div class="mobile_contact contactme">
+                <img src="images/phone-logo.jpg" alt="">
+                <p>+91-8600741308</p>
+              </div>
+              <div class="address_contact contactme">
+                <img src="images/address-logo.jpg" alt="">
+                <p>Wardha, Maharashtra</p>
+              </div>
+              <div id="linkgit">
+                <a href="https://github.com/jivakys"><img src="images/github_logo.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/jivak-sute-148635245/"><img src="images/new-linkedin-logo-white-black-png.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+  <script>
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init({easing : 'ease-in',delay: 100,duration: 300,offset:100});window.addEventListener('load', AOS.refresh);</script>
+</body>
+
+</html>
