@@ -33,12 +33,12 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
    <!-- EMAIL JS -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script type="text/javascript">
     (function () {
       emailjs.init("{{YOUR USER KEY}}");
     })();
-  </script>
+  </script> -->
 
 </head>
 
@@ -53,11 +53,11 @@
           <a href="#"><span>JIVAK SUTE</span></a>
         </div>
         <ul class="nav-link menu">
-          <li><a href="#home" class="menu-btn home">Home</a></li>
-          <li><a href="#about" class="menu-btn about">About</a></li>
-          <li><a href="#skills" class="menu-btn skills">Skills</a></li>
-          <li><a href="#projects" class="menu-btn projects">Projects</a></li>
-          <li><a href="#contact" class="menu-btn contact">Contact</a></li>
+          <li><a href="#home" class="menu-btn nav-link home">Home</a></li>
+          <li><a href="#about" class="menu-btn nav-link about">About</a></li>
+          <li><a href="#skills" class="menu-btn nav-link skills">Skills</a></li>
+          <li><a href="#projects" class="menu-btn nav-link projects">Projects</a></li>
+          <li><a href="#contact" class="menu-btn nav-link contact">Contact</a></li>
           <li><a href="https://drive.google.com/uc?export=download&id=1eWh557jlpOx7cgxpQNA4pqp_BWr_cQCi" class="menu-btn" id="resume-button-1" download="Jivak-Sute-Resume">
             Resume
             <i class="material-icons" id="download">download</i>
@@ -120,10 +120,10 @@
       <h2 class="title" data-aos="fade-up">My Skills</h2>
       <div class="skills-content">
         <div class="column right skill-box">
-          <div class="text skills-card">
+          <div class="text">
           Frontend
         </div>
-          <div class="icons">
+          <div class="icons skills-card">
             <div id="html-icon">
               <img class="skills-card-img" src="images\skill-icons\icons8-html-5.svg" alt="html",  data-aos="flip-left">
               <p style="font-size: 18px;">HTML</p>
@@ -137,10 +137,10 @@
               <p style="font-size: 18px;">JavaScript</p>
             </div>
           </div>
-          <div class="text skills-card">
+          <div class="text">
           Backend
         </div>
-          <div class="icons">
+          <div class="icons skills-card">
             <div id="nodejs-icon">
               <img class="skills-card-img" src="images\skill-icons\icons8-nodejs.svg" alt="nodedjs"  data-aos="flip-left">
               <p style="font-size: 18px;">Node.js</p>
@@ -158,10 +158,10 @@
               <p style="font-size: 18px;">MySQL</p>
             </div>  
           </div>
-          <div class="text skills-card">
+          <div class="text">
             Tools & Others
           </div>
-          <div class="icons">
+          <div class="icons skills-card">
             <div id="vscode-icon">
               <img class="skills-card-img" src="images\skill-icons\icons8-visual-studio-code-2019.svg" alt="vscode" data-aos="flip-left">
               <p style="font-size: 18px;">VS Code</p>
@@ -196,7 +196,7 @@
                 <img src="images/Rentomojo.png" alt="p1">
               </div>
               <div class="projectInfo">
-                <b class="infoOfProject">
+                <b class="project-description">
                   A Daily Appliances renting app allows users to purchase daily need furniture and other Appliances on rent at very fewer prices
                 </b>
                 <div class="techStack">
@@ -232,7 +232,7 @@
                 <img src="images/purpple_App.png" alt="p1">
               </div>
               <div class="projectInfo">
-                <b class="infoOfProject">
+                <b class="project-description">
                   Purpple.com is a Ecommerce product based website in India that allows customers to perchase cosmatic product.
                 </b>
                 <div class="techStack">
@@ -268,7 +268,7 @@
                 <img src="images/Daily_Mart.png" alt="p1">
               </div>
               <div class="projectInfo">
-                <b class="infoOfProject">
+                <b class="project-description">
                   A web application for a multi-national retail clothing chain. It specializes in fast fashion and sells clothing, accessories, shoes, beauty products, and perfumes.
                 </b>
                 <div class="techStack">
@@ -304,7 +304,7 @@
                 <img src="images/lenskart.png" alt="p1">
               </div>
               <div class="projectInfo">
-                <b class="infoOfProject">
+                <b class="project-description">
                  Lenskart Is the Leading E-Commerce Portal For Eyewear In India to provide designer glasses,sunglasses and contact lenses at lower cost.
                 </b>
                 <div class="techStack">

@@ -393,7 +393,7 @@ section .title::after {
   transform: scale(1.05);
   box-shadow: rgb(102, 0, 153) 0px 5px 15px;
 }
-.projects .projectDetails .projectInfo .infoOfProject {
+.projects .projectDetails .projectInfo .project-description {
   text-align: left;
   margin-bottom: 15px;
 }
