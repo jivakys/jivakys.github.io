@@ -57,3 +57,5 @@ btnScrollToTop.addEventListener("click", function () {
     behavior: "smooth",
   });
 });
+
+GitHubCalendar(".calendar", "jivakys", { responsive: true });

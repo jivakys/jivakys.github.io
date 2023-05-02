@@ -526,6 +526,10 @@ section .title::after {
   filter: drop-shadow(0 0 10px #00d5ff);
 }
 
+.react-activity-calendar p {
+  margin-bottom: 25px;
+}
+
 /* contact section styling */
 .contact {
   background-size: 2000px;
