@@ -60,7 +60,7 @@ body {
 
 .navbar .logo a {
   color: black;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 600;
 }
 
@@ -526,8 +526,8 @@ section .title::after {
   filter: drop-shadow(0 0 10px #00d5ff);
 }
 
-.react-activity-calendar p {
-  margin-bottom: 25px;
+#github {
+  margin-top: 50px;
 }
 
 /* contact section styling */
@@ -654,6 +654,10 @@ section .title::after {
   }
 }
 @media (max-width: 1104px) {
+  .navbar .logo a {
+    font-size: 25px;
+    font-weight: 600;
+  }
   .about .about-content .left img {
     height: 350px;
     width: 350px;
