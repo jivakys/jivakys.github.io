@@ -138,7 +138,7 @@
         <h2 class="title" data-aos="fade-down">About Me</h2>
         <div class="about-content">
           <div class="column left" data-aos="fade-right">
-            <img src="./images/full-stack-developer.jpg" alt="" />
+            <img id="aboutImg" src="./images/full-stack-developer.jpg" alt="" />
           </div>
           <div class="column right" data-aos="fade-up">
             <div class="text">
@@ -152,13 +152,15 @@
               to try some new things for optimization.
             </p>
             <div id="about_contact">
-              <a href="https://github.com/jivakys"
+              <a href="https://github.com/jivakys" target="_blank"
                 ><img
                   src="./images/github_logo.png"
                   class="github_link"
                   alt="github"
               /></a>
-              <a href="https://www.linkedin.com/in/jivak-sute-148635245/"
+              <a
+                href="https://www.linkedin.com/in/jivak-sute-148635245/"
+                target="_blank"
                 ><img
                   src="./images/new-linkedin-logo-white-black-png.png"
                   class="linkdin_link"
@@ -186,7 +188,7 @@
                   ,
                   data-aos="flip-left"
                 />
-                <p style="font-size: 18px">HTML</p>
+                <p id="picons" style="font-size: 16px">HTML</p>
               </div>
               <div id="css-icon">
                 <img
@@ -195,7 +197,7 @@
                   alt="css"
                   data-aos="flip-left"
                 />
-                <p style="font-size: 18px">CSS</p>
+                <p id="picons" style="font-size: 16px">CSS</p>
               </div>
               <div id="js-icon">
                 <img
@@ -204,7 +206,7 @@
                   alt="js"
                   data-aos="flip-left"
                 />
-                <p style="font-size: 18px">JavaScript</p>
+                <p id="picons" style="font-size: 16px">JavaScript</p>
               </div>
             </div>
 
@@ -217,79 +219,79 @@
                   alt="nodedjs"
                   data-aos="flip-left"
                 />
-                <p style="font-size: 18px">Node.js</p>
+                <p id="picons" style="font-size: 16px">Node.js</p>
               </div>
-              <div id="express-icon" style="width: 10%">
+              <div class="mongo-icon">
                 <img
                   class="skills-card-img"
                   src="images/skill-icons/express-svgrepo-com.svg"
                   alt="express"
                   data-aos="flip-left"
-                  style="width: 55%"
+                  style="width: 100%"
                 />
-                <p style="font-size: 18px">Express</p>
+                <p id="picons" style="font-size: 16px">Express</p>
               </div>
-              <div id="mongo-icon" style="width: 10%">
+              <div class="mongo-icon">
                 <img
                   class="skills-card-img"
                   src="images/skill-icons/mongodb-svgrepo-com.svg"
                   alt="mongodb"
                   data-aos="flip-left"
-                  style="width: 45%"
+                  style="width: 100%"
                 />
-                <p style="font-size: 18px">MongoDB</p>
+                <p id="picons" style="font-size: 16px">MongoDB</p>
               </div>
-              <div id="mongo-icon" style="width: 10%">
+              <div class="mongo-icon">
                 <img
                   class="skills-card-img"
                   src="images/skill-icons/mysql-logo-svgrepo-com.svg"
                   alt="MySQL"
                   data-aos="flip-left"
-                  style="width: 50%"
+                  style="width: 100%"
                 />
-                <p style="font-size: 18px">MySQL</p>
+                <p id="picons" style="font-size: 16px">MySQL</p>
               </div>
             </div>
             <div class="text skills-card-name">Tools & Others</div>
             <div class="icons">
-              <div id="vscode-icon">
+              <div class="mongo-icon">
                 <img
                   class="skills-card-img"
                   src="images\skill-icons\icons8-visual-studio-code-2019.svg"
                   alt="vscode"
                   data-aos="flip-left"
                 />
-                <p style="font-size: 18px">VS Code</p>
+                <p id="picons" style="font-size: 16px">VS Code</p>
               </div>
-              <div id="express-icon" style="width: 10%">
+              <div class="express-icon">
                 <img
                   class="skills-card-img"
                   src="images/skill-icons/github.svg"
                   alt="github"
                   data-aos="flip-left"
-                  style="width: 50%"
+                  style="width: 100%"
                 />
-                <p style="font-size: 18px">Github</p>
+                <p id="picons" style="font-size: 16px">Github</p>
               </div>
-              <div id="postman-icon" style="width: 10%">
+              <div class="mongo-icon">
                 <img
                   class="skills-card-img"
                   src="images/skill-icons/postman-icon-svgrepo-com.svg"
                   alt="postman"
                   data-aos="flip-left"
-                  style="width: 45%"
+                  style="width: 100%"
                 />
-                <p style="font-size: 18px">Postman</p>
+                <p id="picons" style="font-size: 16px">Postman</p>
               </div>
-              <div id="netlify-icon" style="width: 10%">
+              <div class="mongo-icon">
                 <img
                   class="skills-card-img"
                   src="images\skill-icons/netlify-svgrepo-com.svg"
                   alt="netlify"
                   data-aos="flip-left"
-                  style="width: 45%"
+                  style="width: 100%"
                 />
-                <p style="font-size: 18px">Netlify</p>
+                <p id="picons" style="font-size: 16px">Netlify</p>
               </div>
             </div>
           </div>
@@ -326,32 +328,21 @@
               style="max-width: 100%"
             />
           </div>
-          <div
-            class="max-width"
-            id="github-streak-status"
-            data-aos="fade-up"
-            style="
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              justify-content: space-between;
-              margin-top: 20px;
-            "
-          >
-            <img
-              target="_blank"
-              align="center"
-              alt="jivakys"
-              src="https://github-readme-stats.vercel.app/api?username=jivakys&show_icons=true&amp;locale=en"
-              id="github-stats-card"
-              style="max-width: 100%"
-            />
+          <div class="max-width" id="github-streak-status" data-aos="fade-up">
             <img
               target="_blank"
               src="https://github-readme-stats.vercel.app/api/top-langs?username=jivakys&show_icons=true&locale=en&layout=compact"
               id="github-top-langs"
               align="left"
               alt="jivakys"
+              style="max-width: 100%"
+            />
+            <img
+              target="_blank"
+              align="center"
+              alt="jivakys"
+              src="https://github-readme-stats.vercel.app/api?username=jivakys&show_icons=true&amp;locale=en"
+              id="github-stats-card"
               style="max-width: 100%"
             />
           </div>
@@ -393,27 +384,29 @@
                       <a
                         href="https://github.com/jivakys/punchy-book-3630"
                         class="project-github-link"
+                        target="_blank"
                       >
                         <b>Github</b>
+                        <img
+                          src="images/skill-icons/github.svg"
+                          class="projectBtn"
+                          alt=""
+                        />
                       </a>
-                      <img
-                        src="images/skill-icons/github.svg"
-                        class="projectBtn"
-                        alt=""
-                      />
                     </div>
                     <div class="projectLinks">
                       <a
                         href="https://elaborate-treacle-629473.netlify.app"
                         class="project-deployed-link"
+                        target="_blank"
                       >
                         <b>Live</b>
+                        <img
+                          src="images/skill-icons/deploy-svgrepo-com.svg"
+                          class="projectBtn"
+                          alt=""
+                        />
                       </a>
-                      <img
-                        src="images/skill-icons/deploy-svgrepo-com.svg"
-                        class="projectBtn"
-                        alt=""
-                      />
                     </div>
                   </div>
                 </div>
@@ -447,27 +440,29 @@
                       <a
                         href="https://github.com/Upendrapal0607/satisfying-scale-7625"
                         class="project-github-link"
+                        target="_blank"
                       >
                         <b>Github</b>
+                        <img
+                          src="images/skill-icons/github.svg"
+                          class="projectBtn"
+                          alt=""
+                        />
                       </a>
-                      <img
-                        src="images/skill-icons/github.svg"
-                        class="projectBtn"
-                        alt=""
-                      />
                     </div>
                     <div class="projectLinks">
                       <a
                         href="https://timely-paprenjak-287908.netlify.app"
                         class="project-deployed-link"
+                        target="_blank"
                       >
                         <b>Live</b>
+                        <img
+                          src="images/skill-icons/deploy-svgrepo-com.svg"
+                          class="projectBtn"
+                          alt=""
+                        />
                       </a>
-                      <img
-                        src="images/skill-icons/deploy-svgrepo-com.svg"
-                        class="projectBtn"
-                        alt=""
-                      />
                     </div>
                   </div>
                 </div>
@@ -502,27 +497,29 @@
                       <a
                         href="https://github.com/Tarkeshwar18/royal-stew-1115"
                         class="project-github-link"
+                        target="_blank"
                       >
                         <b>Github</b>
+                        <img
+                          src="images/skill-icons/github.svg"
+                          class="projectBtn"
+                          alt=""
+                        />
                       </a>
-                      <img
-                        src="images/skill-icons/github.svg"
-                        class="projectBtn"
-                        alt=""
-                      />
                     </div>
                     <div class="projectLinks">
                       <a
                         href="https://regal-yeot-b37826.netlify.app/"
                         class="project-deployed-link"
+                        target="_blank"
                       >
                         <b>Live</b>
+                        <img
+                          src="images/skill-icons/deploy-svgrepo-com.svg"
+                          class="projectBtn"
+                          alt=""
+                        />
                       </a>
-                      <img
-                        src="images/skill-icons/deploy-svgrepo-com.svg"
-                        class="projectBtn"
-                        alt=""
-                      />
                     </div>
                   </div>
                 </div>
@@ -566,14 +563,15 @@
                       <a
                         href="https://github.com/jivakys/devilish-tax-7135"
                         class="project-github-link"
+                        target="_blank"
                       >
                         <b>Github</b>
+                        <img
+                          src="images/skill-icons/github.svg"
+                          class="projectBtn"
+                          alt=""
+                        />
                       </a>
-                      <img
-                        src="images/skill-icons/github.svg"
-                        class="projectBtn"
-                        alt=""
-                      />
                     </div>
                     <div class="projectLinks">
                       <a
@@ -581,12 +579,12 @@
                         class="project-deployed-link"
                       >
                         <b>Live</b>
+                        <img
+                          src="images/skill-icons/deploy-svgrepo-com.svg"
+                          class="projectBtn"
+                          alt=""
+                        />
                       </a>
-                      <img
-                        src="images/skill-icons/deploy-svgrepo-com.svg"
-                        class="projectBtn"
-                        alt=""
-                      />
                     </div>
                   </div>
                 </div>
@@ -624,13 +622,15 @@
                   <p>Wardha, Maharashtra</p>
                 </div>
                 <div class="contact-div">
-                  <a href="https://github.com/jivakys"
+                  <a href="https://github.com/jivakys" target="_blank"
                     ><img
                       id="contact-github"
                       src="images/github_logo.png"
                       alt="github"
                   /></a>
-                  <a href="https://www.linkedin.com/in/jivak-sute-148635245/"
+                  <a
+                    href="https://www.linkedin.com/in/jivak-sute-148635245/"
+                    target="_blank"
                     ><img
                       id="contact-linkedin"
                       src="images/new-linkedin-logo-white-black-png.png"

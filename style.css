@@ -35,7 +35,7 @@ body {
 }
 
 .navbar.sticky {
-  padding: 30px 0;
+  padding: 20px 0;
   box-shadow: 0px 10px 50px 5px #00000038;
 }
 
@@ -302,7 +302,7 @@ section .title::after {
   text-align: justify;
 }
 .about #about_contact {
-  width: 20%;
+  width: 18%;
   height: 50px;
   display: flex;
   margin-top: 15px;
@@ -428,6 +428,12 @@ section .title::after {
   text-align: center;
   margin-right: 15px;
 }
+.links .projectLinks a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 .links .projectLinks img {
   width: 30%;
 }
@@ -445,7 +451,7 @@ section .title::after {
   color: black;
   font-size: 25px;
   font-weight: 600;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 .skills .skills-content .left .paragraph-2 {
   font-size: 17px;
@@ -484,6 +490,12 @@ section .title::after {
 .skills .skills-content .right .icons img {
   transition: all 0.3s ease;
   color: black;
+}
+.express-icon {
+  width: 6%;
+}
+.mongo-icon {
+  width: 6%;
 }
 .skills .skills-content .right .icons div:hover {
   transform: scale(1.2);
@@ -529,7 +541,13 @@ section .title::after {
 #github {
   margin-top: 50px;
 }
-
+#github-streak-status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
 /* contact section styling */
 .contact {
   background-size: 2000px;
@@ -569,10 +587,9 @@ section .title::after {
 }
 #contact-info .contactme p {
   font-size: 20px;
-  /* color: rgb(102, 0, 153); */
 }
 .contact-div {
-  width: 25%;
+  width: 30%;
   display: flex;
   transition: all 0.3s ease;
 }
@@ -672,8 +689,20 @@ section .title::after {
   .home .home-content .text-3 span {
     font-size: 34px;
   }
-  .home .passport {
-    width: 15%;
+  #home .passport {
+    width: 22%;
+  }
+  #aboutImg {
+    height: 250px;
+  }
+  .links .projectLinks {
+    width: 25%;
+    height: 35px;
+    font-size: 13px;
+    margin-right: 15px;
+  }
+  .links .projectLinks img {
+    width: 25%;
   }
 }
 @media (max-width: 991px) {
@@ -684,19 +713,31 @@ section .title::after {
     font-size: 15px;
     margin-left: 22px;
   }
-  .home .home-content .text-3 {
+  #home .home-content .text-3 {
     font-size: 30px;
   }
-  .home .home-content .text-3 span {
+  #home .home-content .text-3 span {
     font-size: 30px;
   }
-  .home .passport {
-    width: 15%;
+  #home .passport {
+    width: 22%;
+  }
+  #aboutImg {
+    height: 200px;
+  }
+  .links .projectLinks {
+    width: 25%;
+    height: 35px;
+    font-size: 13px;
+    margin-right: 15px;
+  }
+  .links .projectLinks img {
+    width: 25%;
   }
 }
 @media (max-width: 948px) {
-  .max-width {
-    padding: 0 50px;
+  #home .max-width {
+    margin: auto 0px auto 50px;
   }
   .menu-btn {
     display: block;
@@ -734,19 +775,27 @@ section .title::after {
     font-size: 25px;
   }
 
-  .home .home-content .text-2 {
-    font-size: 40px;
+  #home .max-width .home-content {
+    padding-top: 150px;
+    padding-left: 10px;
   }
 
-  .home .home-content .text-3 {
+  #home .home-content .text-1 {
+    font-size: 25px;
+  }
+  #home .home-content .text-2 {
+    font-size: 45px;
+  }
+
+  #home .home-content .text-3 {
     font-size: 30px;
   }
-  .home .home-content .text-3 span {
+  #home .home-content .text-3 span {
     font-size: 30px;
   }
-  .home .passport {
-    margin-left: 50px;
-    padding-top: 220px;
+  #home .passport {
+    margin-left: 15px;
+    padding-top: 150px;
     width: 20%;
   }
   .max-width {
@@ -764,37 +813,68 @@ section .title::after {
   .about .about-content .right {
     flex: 100%;
   }
+  #about_contact {
+    width: 18%;
+  }
+  #about_contact img {
+    height: 100%;
+  }
+  #aboutImg {
+    height: 200px;
+  }
   .projects .serv-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
+  }
+  .techStack img {
+    width: 15%;
   }
   .skills .skills-content .column {
     width: 100%;
     margin-bottom: 35px;
   }
+  #github-streak-status {
+    flex-direction: column;
+  }
+  #github-streak-status img {
+    margin-bottom: 20px;
+  }
+  .links .projectLinks {
+    width: 30%;
+    height: 35px;
+    font-size: 13px;
+    margin-right: 15px;
+  }
+  .links .projectLinks img {
+    width: 25%;
+  }
+  .material-icons {
+    color: #91efef;
+  }
 }
 @media (max-width: 690px) {
-  .max-width {
-    padding: 0 23px;
+  #home .max-width {
+    padding: 0px 23px;
+    margin: 0px;
   }
 
-  .home .home-content .text-1 {
-    font-size: 25px;
+  #home .home-content .text-1 {
+    font-size: 20px;
   }
 
-  .home .home-content .text-2 {
-    font-size: 40px;
+  #home .home-content .text-2 {
+    font-size: 30px;
   }
 
-  .home .home-content .text-3 {
-    font-size: 25px;
+  #home .home-content .text-3 {
+    font-size: 20px;
   }
-  .home .home-content .text-3 span {
-    font-size: 25px;
+  #home .home-content .text-3 span {
+    font-size: 20px;
   }
-  .home .passport {
-    margin-left: 50px;
-    padding-top: 220px;
+  #home .passport {
+    margin-left: 30px;
+    padding-top: 230px;
     width: 20%;
   }
   .projects .serv-content .card,
@@ -802,31 +882,89 @@ section .title::after {
   .contact .contact-content .column {
     width: 100%;
   }
+  .techStack img {
+    width: 15%;
+  }
   #contact-info {
     margin-top: 25px;
+  }
+  #aboutImg {
+    height: 200px;
+  }
+  .links .projectLinks {
+    width: 20%;
+    height: 35px;
+    font-size: 13px;
+    margin-right: 15px;
+  }
+  .links .projectLinks img {
+    width: 25%;
+  }
+  .material-icons {
+    color: #757676;
   }
 }
 @media (max-width: 500px) {
-  .home .home-content .text-1 {
-    font-size: 20px;
+  #home .max-width .home-content {
+    padding-top: 150px;
+    padding-left: 10px;
   }
 
-  .home .home-content .text-2 {
+  #home .home-content .text-1 {
+    font-size: 20px;
+  }
+  #home .home-content .text-2 {
     font-size: 30px;
   }
 
-  .home .home-content .text-3 {
+  #home .home-content .text-3 {
     font-size: 20px;
   }
-  .home .home-content .text-3 span {
+  #home .home-content .text-3 span {
     font-size: 20px;
   }
-  .home .passport {
-    margin-left: 30px;
-    padding-top: 230px;
-    width: 25%;
+  #home .passport {
+    margin-left: 15px;
+    padding-top: 150px;
+    width: 30%;
+  }
+  .material-icons {
+    color: #9ddada;
   }
   #contact-info {
     margin-top: 25px;
+  }
+  #aboutImg {
+    height: 200px;
+  }
+  #about .about-content .right .text {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  #user-detail-intro {
+    font-size: 16px;
+  }
+  .about #about_contact {
+    width: 35%;
+  }
+  .links .projectLinks {
+    width: 35%;
+    height: 35px;
+    font-size: 13px;
+  }
+  .links .projectLinks img {
+    width: 20%;
+  }
+  #picons {
+    font-size: 16px;
+  }
+  .techStack img {
+    width: 15%;
+  }
+  .express-icon {
+    width: 15%;
+  }
+  .mongo-icon {
+    width: 15%;
   }
 }
