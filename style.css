@@ -25,6 +25,10 @@ body {
   margin: auto;
 }
 
+b {
+  color: rgb(102, 0, 153);
+}
+
 .navbar {
   position: fixed;
   width: 100%;
