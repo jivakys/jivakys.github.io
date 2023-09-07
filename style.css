@@ -93,7 +93,6 @@ b {
   font-weight: 500;
   margin-left: 25px;
   transition: color 0.3s;
-  /* color: white; */
   color: rgb(193, 187, 245);
   text-decoration: none;
   display: inline-block;
@@ -226,8 +225,7 @@ footer {
 }
 .about .about-content,
 .projects .serv-content,
-.skills .skills-content,
-.contact,
+.skills .contact,
 .contact-content {
   display: flex;
   flex-wrap: wrap;
@@ -521,21 +519,33 @@ section .title::after {
   -webkit-filter: drop-shadow(0 0 10px #757676);
   filter: drop-shadow(0 0 10px #757676);
 }
+#nodejs-icon:hover {
+  -webkit-filter: drop-shadow(0 0 10px #3c873a);
+  filter: drop-shadow(0 0 10px #3c873a);
+}
+#express-icon:hover {
+  -webkit-filter: drop-shadow(0 0 10px rgb(206, 205, 205));
+  filter: drop-shadow(0 0 10px rgb(206, 205, 205));
+}
 #mongo-icon:hover {
-  -webkit-filter: drop-shadow(0 0 10px #44fdb3);
-  filter: drop-shadow(0 0 10px #44fdb3);
+  -webkit-filter: drop-shadow(0 0 10px rgb(67, 121, 67));
+  filter: drop-shadow(0 0 10px rgb(67, 121, 67));
+}
+#sql-icon:hover {
+  -webkit-filter: drop-shadow(0 0 10px #ecae3b);
+  filter: drop-shadow(0 0 10px #ecae3b);
 }
 #vscode-icon:hover {
   -webkit-filter: drop-shadow(0 0 10px #0078d7);
   filter: drop-shadow(0 0 10px #0078d7);
 }
-#nodejs-icon:hover {
-  -webkit-filter: drop-shadow(0 0 10px #3c873a);
-  filter: drop-shadow(0 0 10px #3c873a);
+#github-icon:hover {
+  -webkit-filter: drop-shadow(0 0 10px black);
+  filter: drop-shadow(0 0 10px black);
 }
 #postman-icon:hover {
-  -webkit-filter: drop-shadow(0 0 10px #ff8800);
-  filter: drop-shadow(0 0 10px #ff8800);
+  -webkit-filter: drop-shadow(0 0 10px rgb(248, 175, 187));
+  filter: drop-shadow(0 0 10px rgb(248, 175, 187));
 }
 #netlify-icon:hover {
   -webkit-filter: drop-shadow(0 0 10px #00d5ff);
