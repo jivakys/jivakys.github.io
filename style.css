@@ -115,7 +115,7 @@ b {
 .navbar .menu a:hover:after {
   width: 100%;
   left: 0;
-  color: rgb(197, 192, 245);
+  color: rgb(224, 222, 244);
 }
 .navbar .menu li a:hover {
   color: rgb(102, 0, 153);
@@ -873,7 +873,7 @@ section .title::after {
     width: 25%;
   }
   .material-icons {
-    color: #91efef;
+    color: rgb(215, 172, 239);
   }
 }
 @media (max-width: 690px) {
@@ -925,7 +925,7 @@ section .title::after {
     width: 25%;
   }
   .material-icons {
-    color: #757676;
+    color: rgb(215, 172, 239);
   }
 }
 @media (max-width: 500px) {
@@ -953,7 +953,7 @@ section .title::after {
     width: 30%;
   }
   .material-icons {
-    color: #9ddada;
+    color: rgb(215, 172, 239);
   }
   #contact-info {
     margin-top: 25px;
