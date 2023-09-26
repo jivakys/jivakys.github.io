@@ -58,4 +58,17 @@ btnScrollToTop.addEventListener("click", function () {
   });
 });
 
-GitHubCalendar(".calendar", "jivakys", { responsive: true });
+document.getElementById("resume-button-1").addEventListener("click", () => {
+  window.open(
+    "https://drive.google.com/file/d/1eWh557jlpOx7cgxpQNA4pqp_BWr_cQCi/view?usp=sharing",
+    "_blank"
+  );
+});
+document.getElementById("resume-button-2").addEventListener("click", () => {
+  window.open(
+    "https://drive.google.com/file/d/1eWh557jlpOx7cgxpQNA4pqp_BWr_cQCi/view?usp=sharing",
+    "_blank"
+  );
+});
+
+https: GitHubCalendar(".calendar", "jivakys", { responsive: true });
