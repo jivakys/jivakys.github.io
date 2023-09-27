@@ -58,17 +58,50 @@ btnScrollToTop.addEventListener("click", function () {
   });
 });
 
-document.getElementById("resume-button-1").addEventListener("click", () => {
-  window.open(
-    "https://drive.google.com/file/d/1eWh557jlpOx7cgxpQNA4pqp_BWr_cQCi/view?usp=sharing",
-    "_blank"
-  );
+const resumeButton = document.getElementById("resume-button-1");
+let isDownloaded = false;
+
+resumeButton.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  if (!isDownloaded) {
+    const downloadUrl = resumeButton.getAttribute("data-download-url");
+    const downloadLink = document.createElement("a");
+    downloadLink.href = downloadUrl;
+    downloadLink.download = "Jivak-Sute-Resume";
+    downloadLink.click();
+
+    isDownloaded = true;
+
+    setTimeout(() => {
+      window.open(
+        "https://drive.google.com/file/d/1eWh557jlpOx7cgxpQNA4pqp_BWr_cQCi/view?usp=sharing",
+        "_blank"
+      );
+    }, 200);
+  }
 });
-document.getElementById("resume-button-2").addEventListener("click", () => {
-  window.open(
-    "https://drive.google.com/file/d/1eWh557jlpOx7cgxpQNA4pqp_BWr_cQCi/view?usp=sharing",
-    "_blank"
-  );
+
+const resumeButton2 = document.getElementById("resume-button-2");
+let isDownloaded2 = false;
+
+resumeButton2.addEventListener("click", () => {
+  if (!isDownloaded2) {
+    const downloadUrl = resumeButton2.getAttribute("data-download-url");
+    const downloadLink = document.createElement("a");
+    downloadLink.href = downloadUrl;
+    downloadLink.download = "Jivak-Sute-Resume";
+    downloadLink.click();
+
+    isDownloaded2 = true;
+
+    setTimeout(() => {
+      window.open(
+        "https://drive.google.com/file/d/1eWh557jlpOx7cgxpQNA4pqp_BWr_cQCi/view?usp=sharing",
+        "_blank"
+      );
+    }, 200);
+  }
 });
 
 https: GitHubCalendar(".calendar", "jivakys", { responsive: true });
