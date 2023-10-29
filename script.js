@@ -1,3 +1,4 @@
+GitHubCalendar(".calendar", "jivakys", { responsive: true });
 function sendMail(params) {
   var tempParams = {
     from_name: document.getElementById("fromName").value,
@@ -103,5 +104,3 @@ resumeButton2.addEventListener("click", () => {
     }, 200);
   }
 });
-
-https: GitHubCalendar(".calendar", "jivakys", { responsive: true });
