@@ -1,4 +1,5 @@
 GitHubCalendar(".calendar", "jivakys", { responsive: true });
+
 function sendMail(params) {
   var tempParams = {
     from_name: document.getElementById("fromName").value,
